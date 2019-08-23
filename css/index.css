@@ -134,3 +134,61 @@ html,
 body {
   height: 100%;
 }
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navContainer {
+  max-width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+.navContainer .navSection {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navContainer .navSection img {
+  width: 290px;
+}
+.navContainer .navSection nav {
+  display: flex;
+  justify-items: space-evenly;
+  align-items: center;
+}
+.navContainer .navSection nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: #212529;
+}
+.navContainer .navSection .nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+}
+.navContainer .navSection .nav-buttons button {
+  height: 25px;
+  border-radius: 10%;
+  width: 90px;
+}
+.navContainer .navSection .nav-buttons .signUp {
+  background-color: #ffb97b;
+}
+.navContainer .navSection .nav-buttons .signUp:hover {
+  background-color: white;
+  cursor: pointer;
+}
+.navContainer .navSection .nav-buttons .logIn {
+  background-color: white;
+}
+.navContainer .navSection .nav-buttons .logIn:hover {
+  background-color: #ffb97b;
+  cursor: pointer;
+}
