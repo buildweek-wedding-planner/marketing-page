@@ -257,6 +257,10 @@ p {
   color: peru;
   border: 2px solid #ffb97b;
   font-weight: bold;
+  background-color: whitesmoke;
+}
+.landingPage-BannerContainer .intro .buttons-container .weddingPlanner:hover {
+  background: white;
 }
 .landingPage-BannerContainer .intro .buttons-container .signUp {
   width: 140px;
@@ -264,6 +268,9 @@ p {
   background-color: peru;
   border: 2px solid #ffb97b;
   font-weight: bold;
+}
+.landingPage-BannerContainer .intro .buttons-container .signUp:hover {
+  background-color: #ffb97b;
 }
 .landingPage-BannerContainer .intro p {
   font-weight: bolder;
