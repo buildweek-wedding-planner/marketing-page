@@ -1,0 +1,61 @@
+
+.navContainer{
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    
+    .navSection{
+        width:1100px;
+         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+            width: 290px;
+        }
+        nav{
+            
+            display:flex;
+            justify-items: space-evenly;
+            align-items: center;
+            a{
+                padding: 10px;
+                text-decoration: none;
+                color: #212529;
+            }        
+        }
+        .nav-buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            width:200px;
+            button{
+               height: 25px;
+               border-radius: 10%;
+               width:90px;
+               border-style: none;
+               
+            }
+            .signUp{
+                background-color: @accentColor;
+                color: white;
+                &:hover{
+                    background-color: white; 
+                    cursor: pointer;
+                    color: @accentColor;
+                   
+                }
+            }
+            .logIn{
+                background-color: white;
+                color: @accentColor;
+                &:hover{
+                    background-color: @accentColor;
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+        }
+    }
+}
