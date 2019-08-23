@@ -191,6 +191,10 @@ p {
   text-decoration: none;
   color: #212529;
 }
+.navContainer .navSection nav a:hover {
+  color: gray;
+  border-bottom: 2px solid black;
+}
 .navContainer .navSection .nav-buttons {
   display: flex;
   justify-content: center;
