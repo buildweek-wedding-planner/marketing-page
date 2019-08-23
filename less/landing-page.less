@@ -1,0 +1,63 @@
+//banner
+
+.landingPage-BannerContainer{
+    position: relative;
+    img{
+        width:100%;
+        height: auto;
+    }
+    .intro{
+        width:420px;
+        height:250px;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: white;
+        
+        .title{
+            background-color: rgba(40,33,26,0.6);
+        }
+        .buttons-container{
+            padding:20px;display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+            button{
+                    height: 40px; 
+                    border-radius: 5%;
+                    
+                    &:hover{
+                        cursor: pointer;                        
+                    }
+            }
+                
+            .weddingPlanner{
+                    color: peru; 
+                    border: 2px solid @accentColor;
+                    font-weight: bold; 
+            }
+                
+            .signUp{
+                width: 140px;
+                color: white;
+                background-color: peru;
+                border: 2px solid @accentColor;
+                font-weight: bold;
+
+            }    
+        }
+        p{   
+            font-weight:bolder;
+            padding-left: 120px;
+            
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: goldenrod;
+                }
+            }
+        }
+    }  
+}

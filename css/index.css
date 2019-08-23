@@ -137,9 +137,34 @@ body {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 img {
   max-width: 100%;
   height: auto;
+}
+nav {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
 }
 .navContainer {
   max-width: 100%;
@@ -196,4 +221,58 @@ img {
   background-color: #ffb97b;
   cursor: pointer;
   color: white;
+}
+.landingPage-BannerContainer {
+  position: relative;
+}
+.landingPage-BannerContainer img {
+  width: 100%;
+  height: auto;
+}
+.landingPage-BannerContainer .intro {
+  width: 420px;
+  height: 250px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+}
+.landingPage-BannerContainer .intro .title {
+  background-color: rgba(40, 33, 26, 0.6);
+}
+.landingPage-BannerContainer .intro .buttons-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.landingPage-BannerContainer .intro .buttons-container button {
+  height: 40px;
+  border-radius: 5%;
+}
+.landingPage-BannerContainer .intro .buttons-container button:hover {
+  cursor: pointer;
+}
+.landingPage-BannerContainer .intro .buttons-container .weddingPlanner {
+  color: peru;
+  border: 2px solid #ffb97b;
+  font-weight: bold;
+}
+.landingPage-BannerContainer .intro .buttons-container .signUp {
+  width: 140px;
+  color: white;
+  background-color: peru;
+  border: 2px solid #ffb97b;
+  font-weight: bold;
+}
+.landingPage-BannerContainer .intro p {
+  font-weight: bolder;
+  padding-left: 120px;
+}
+.landingPage-BannerContainer .intro p a {
+  text-decoration: none;
+  color: white;
+}
+.landingPage-BannerContainer .intro p a:hover {
+  color: goldenrod;
 }
