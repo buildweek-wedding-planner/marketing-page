@@ -137,9 +137,37 @@ body {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 img {
   max-width: 100%;
   height: auto;
+}
+nav {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+.container {
+  margin: 0 auto;
 }
 .navContainer {
   max-width: 100%;
@@ -165,6 +193,10 @@ img {
   padding: 10px;
   text-decoration: none;
   color: #212529;
+}
+.navContainer .navSection nav a:hover {
+  color: gray;
+  border-bottom: 2px solid black;
 }
 .navContainer .navSection .nav-buttons {
   display: flex;
@@ -196,4 +228,148 @@ img {
   background-color: #ffb97b;
   cursor: pointer;
   color: white;
+}
+.landingPage-BannerContainer {
+  position: relative;
+  max-width: 100%;
+}
+.landingPage-BannerContainer img {
+  max-width: 100%;
+  height: auto;
+}
+.landingPage-BannerContainer .intro {
+  width: 420px;
+  height: 250px;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+}
+.landingPage-BannerContainer .intro .title {
+  background-color: rgba(40, 33, 26, 0.6);
+}
+.landingPage-BannerContainer .intro .buttons-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.landingPage-BannerContainer .intro .buttons-container button {
+  height: 40px;
+  border-radius: 5%;
+}
+.landingPage-BannerContainer .intro .buttons-container button:hover {
+  cursor: pointer;
+}
+.landingPage-BannerContainer .intro .buttons-container .weddingPlanner {
+  color: peru;
+  border: 2px solid #ffb97b;
+  font-weight: bold;
+  background-color: whitesmoke;
+}
+.landingPage-BannerContainer .intro .buttons-container .weddingPlanner:hover {
+  background: white;
+}
+.landingPage-BannerContainer .intro .buttons-container .signUp {
+  width: 140px;
+  color: white;
+  background-color: peru;
+  border: 2px solid #ffb97b;
+  font-weight: bold;
+}
+.landingPage-BannerContainer .intro .buttons-container .signUp:hover {
+  background-color: #ffb97b;
+}
+.landingPage-BannerContainer .intro p {
+  font-weight: bolder;
+  padding-left: 120px;
+}
+.landingPage-BannerContainer .intro p a {
+  text-decoration: none;
+  color: white;
+}
+.landingPage-BannerContainer .intro p a:hover {
+  color: goldenrod;
+}
+.landingPage-MainContainer {
+  width: 950px;
+  margin: 0 auto;
+}
+.landingPage-MainContainer .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 190px;
+}
+.landingPage-MainContainer .advice-container {
+  display: flex;
+  flex-direction: row;
+}
+.landingPage-MainContainer .advice-container .advice-section {
+  padding: 10px;
+}
+.landingPage-MainContainer .advice-container .advice-section .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.landingPage-MainContainer .advice-container .advice-section .top img {
+  width: 64px;
+}
+.landingPage-MainContainer .advice-container .advice-section .top p {
+  line-height: 60px;
+}
+.footer-container {
+  background-color: #E6E0E0;
+  max-width: 100%;
+}
+.footer-container .move-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer-container .move-footer .footer-icons {
+  width: 130px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 35px;
+}
+.footer-container .move-footer .footer-icons a {
+  font-size: 1.9rem;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #E6E0E0;
+  background-color: #6E5F5F;
+}
+.footer-container .move-footer .footer-icons a:hover {
+  color: #958989;
+}
+.footer-container .copyright-container {
+  display: flex;
+  justify-content: center;
+}
+.footer-container .copyright-container nav {
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer-container .copyright-container nav a {
+  text-decoration: none;
+  color: black;
+}
+.footer-container .copyright-container nav a:hover {
+  color: gray;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+.footer-container .copyright-container nav .fa-heart {
+  font-size: 1.4rem;
+  color: #DF89A3;
 }

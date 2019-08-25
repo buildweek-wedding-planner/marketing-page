@@ -1,0 +1,106 @@
+//banner
+
+.landingPage-BannerContainer{
+    position: relative;
+    max-width: 100%;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    .intro{
+        width:420px;
+        height:250px;
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        color: white;
+        
+        .title{
+            background-color: rgba(40,33,26,0.6);
+        }
+        .buttons-container{
+            padding:20px;display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+            button{
+                    height: 40px; 
+                    border-radius: 5%;
+                    
+                    &:hover{
+                        cursor: pointer;                        
+                    }
+            }
+                
+            .weddingPlanner{
+                    color: peru; 
+                    border: 2px solid @accentColor;
+                    font-weight: bold;
+                    background-color: whitesmoke;
+                    &:hover{
+                        background: white; 
+                    } 
+            }
+                
+            .signUp{
+                width: 140px;
+                color: white;
+                background-color: peru;
+                border: 2px solid @accentColor;
+                font-weight: bold;
+
+                &:hover{
+                    background-color: @accentColor;
+                }
+            }    
+        }
+        p{   
+            font-weight:bolder;
+            padding-left: 120px;
+            
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: goldenrod;
+                }
+            }
+        }
+    }  
+}
+
+.landingPage-MainContainer{ 
+   width:950px;
+   margin: 0 auto;
+
+   .title{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 190px;
+    }   
+    .advice-container{
+        display:flex;
+        flex-direction: row;
+        .advice-section{
+            padding: 10px;
+            .top{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width:64px;
+                }
+                p{
+                    line-height: 60px;
+                }
+            }
+             
+        }
+    }     
+        
+      
+}
