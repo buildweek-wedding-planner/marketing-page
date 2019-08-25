@@ -197,6 +197,7 @@ p {
 .navContainer .navSection nav a:hover {
   color: gray;
   border-bottom: 2px solid black;
+  transition: 0.2s;
 }
 .navContainer .navSection .nav-buttons {
   display: flex;
@@ -320,6 +321,42 @@ p {
 }
 .landingPage-MainContainer .advice-container .advice-section .top p {
   line-height: 60px;
+}
+.container3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #b6b6b6;
+}
+.container3 .container3-top {
+  max-width: 100%;
+}
+.container3 .container3-top .follow-us {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.container3 .container3-top .follow-us p:hover {
+  color: gray;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.container3 .photo-container {
+  border-top: 1px solid #b6b6b6;
+  border-bottom: 1px solid #b6b6b6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+.container3 .photo-container .demo {
+  padding: 0 3px 0 3px;
+}
+.container3 .photo-container img {
+  width: 16.6%;
 }
 .footer-container {
   background-color: #E6E0E0;

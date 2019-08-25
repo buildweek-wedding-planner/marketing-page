@@ -102,5 +102,47 @@
         }
     }     
         
-      
+}
+
+.container3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    border-top: 1px solid @linecolor;
+    .container3-top{ 
+        max-width: 100%;
+        
+        
+        .follow-us{ 
+          
+            padding-top: 30px;
+            padding-bottom: 20px;
+            text-align:center;
+            p{
+                &:hover{
+                    color: gray;
+                    cursor: pointer;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    .photo-container{ 
+        border-top: 1px solid @linecolor;
+        border-bottom: 1px solid @linecolor;
+        padding-top: 30px;
+        padding-bottom:30px;
+        display:flex;
+        flex-direction:row;
+        max-width:100%;
+        .demo{
+            padding:0 3px 0 3px;
+        }
+        img{
+            width:16.6%;
+        }
+
+    }
 }
