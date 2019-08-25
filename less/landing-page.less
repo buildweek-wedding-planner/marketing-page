@@ -2,8 +2,9 @@
 
 .landingPage-BannerContainer{
     position: relative;
+    max-width: 100%;
     img{
-        width:100%;
+        max-width: 100%;
         height: auto;
     }
     .intro{
@@ -68,3 +69,37 @@
         }
     }  
 }
+
+.landingPage-MainContainer{ 
+   width:950px;
+   margin: 0 auto;
+
+   .title{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 190px;
+    }   
+       .advice-container{
+            display:flex;
+            flex-direction: row;
+            .advice-section{
+                .top{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img{
+                        width:64px;
+                    }
+                    p{
+                        line-height: 60px;
+                    }
+                }
+            }
+        }     
+        
+      
+    }
