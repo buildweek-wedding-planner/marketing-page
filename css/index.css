@@ -410,6 +410,45 @@ p {
 .container3 .photo-container img {
   width: 16.6%;
 }
+body {
+  margin: 0;
+}
+body .photogalleryTitle {
+  text-align: center;
+  padding: 32px;
+}
+body .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+body .row .column {
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+@media screen and (max-width: 800px) {
+  body .row .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .row .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+body .row .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 .footer-container {
   background-color: #E6E0E0;
   max-width: 100%;
