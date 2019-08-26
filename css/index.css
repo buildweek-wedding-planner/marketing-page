@@ -295,6 +295,7 @@ p {
 .landingPage-MainContainer {
   width: 950px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 .landingPage-MainContainer .title {
   display: flex;
@@ -321,6 +322,57 @@ p {
 }
 .landingPage-MainContainer .advice-container .advice-section .top p {
   line-height: 60px;
+}
+.container2 {
+  border-top: 1px solid #b6b6b6;
+}
+.container2 .idea-title {
+  text-align: center;
+  padding: 40px;
+}
+.container2 .blogs-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1300px;
+  margin: auto;
+}
+.container2 .blogs-list .idea-section {
+  margin: auto;
+  width: 500px;
+}
+.container2 .blogs-list .idea-section .blog-img {
+  width: 100%;
+  height: 70%;
+  padding: 10px;
+}
+.container2 .blogs-list .idea-section p {
+  padding: 10px;
+  text-align: center;
+  font-size: 2.1rem;
+}
+.container2 .blogs-list .idea-section p a {
+  text-decoration: none;
+  color: black;
+}
+.container2 .blog-button {
+  text-align: center;
+  height: 100px;
+  padding: 10px;
+}
+.container2 .blog-button button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10%;
+  border-style: none;
+  border: 2px solid peru;
+  background-color: whitesmoke;
+}
+.container2 .blog-button button:hover {
+  cursor: pointer;
+  background-color: peru;
+  border: 2px solid #E6E0E0;
+  transition: 0.5s;
 }
 .container3 {
   width: 100%;

@@ -73,6 +73,7 @@
 .landingPage-MainContainer{ 
    width:950px;
    margin: 0 auto;
+   padding-bottom: 20px;
 
    .title{
        display: flex;
@@ -104,6 +105,65 @@
         
 }
 
+//blogs
+.container2{
+    border-top: 1px solid @linecolor;
+    .idea-title{
+        text-align:center;
+        padding: 40px;
+    }
+   
+    .blogs-list{ 
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        width:1300px;
+        margin:auto;
+      
+        .idea-section{
+          margin:auto;
+           width:500px;
+          
+           
+            .blog-img{width:100%;
+                    height:70%;
+                    padding:10px;
+            }
+            p{
+                padding:10px;
+                text-align:center;
+                font-size: 2.1rem;
+                a{
+                text-decoration: none;
+                color:black;
+                }
+            }
+        }
+    } 
+    .blog-button{ 
+      text-align:center;
+      height: 100px;
+      padding:10px;
+      button{
+          width: 100px;
+          height:30px;
+          border-radius: 10%;
+          border-style: none;
+          border:2px solid peru;
+          background-color: whitesmoke;
+          &:hover{
+              cursor: pointer;
+              background-color: peru;
+              border: 2px solid @footerbg;
+              transition: .5s;
+
+          }
+      }
+       
+    }
+}
+
+//Follow Us:IG
 .container3{
     width: 100%;
     display: flex;
