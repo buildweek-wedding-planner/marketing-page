@@ -165,6 +165,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-family: 'Cormorant Infant', serif;
 }
 .container {
   margin: 0 auto;
@@ -193,6 +194,7 @@ p {
   padding: 10px;
   text-decoration: none;
   color: #212529;
+  font-family: 'cormorant garamond', serif;
 }
 .navContainer .navSection nav a:hover {
   color: gray;
@@ -215,6 +217,7 @@ p {
 .navContainer .navSection .nav-buttons .signUp {
   background-color: #ffb97b;
   color: white;
+  font-family: 'Trirong', serif;
 }
 .navContainer .navSection .nav-buttons .signUp:hover {
   background-color: white;
@@ -224,6 +227,7 @@ p {
 .navContainer .navSection .nav-buttons .logIn {
   background-color: white;
   color: #ffb97b;
+  font-family: 'Trirong', serif;
 }
 .navContainer .navSection .nav-buttons .logIn:hover {
   background-color: #ffb97b;
@@ -245,6 +249,7 @@ p {
   top: 40%;
   left: 10%;
   color: white;
+  font-family: 'Cormorant Infant', serif;
 }
 .landingPage-BannerContainer .intro .title {
   background-color: rgba(40, 33, 26, 0.6);
@@ -267,6 +272,7 @@ p {
   border: 2px solid #ffb97b;
   font-weight: bold;
   background-color: whitesmoke;
+  font-family: 'Trirong', serif;
 }
 .landingPage-BannerContainer .intro .buttons-container .weddingPlanner:hover {
   background: white;
@@ -277,6 +283,7 @@ p {
   background-color: peru;
   border: 2px solid #ffb97b;
   font-weight: bold;
+  font-family: 'Trirong', serif;
 }
 .landingPage-BannerContainer .intro .buttons-container .signUp:hover {
   background-color: #ffb97b;
@@ -303,6 +310,15 @@ p {
   justify-content: center;
   align-items: center;
   height: 190px;
+  max-width: 100%;
+}
+.landingPage-MainContainer .title h3 {
+  font-family: 'allura', cursive;
+  font-size: 3.5rem;
+}
+.landingPage-MainContainer .title h4 {
+  font-family: 'allura', cursive;
+  font-size: 2.5rem;
 }
 .landingPage-MainContainer .advice-container {
   display: flex;
@@ -322,6 +338,7 @@ p {
 }
 .landingPage-MainContainer .advice-container .advice-section .top p {
   line-height: 60px;
+  font-weight: 700;
 }
 .container2 {
   border-top: 1px solid #b6b6b6;
@@ -329,6 +346,8 @@ p {
 .container2 .idea-title {
   text-align: center;
   padding: 40px;
+  font-family: 'allura', cursive;
+  font-size: 3.5rem;
 }
 .container2 .blogs-list {
   display: flex;
@@ -367,6 +386,7 @@ p {
   border-style: none;
   border: 2px solid peru;
   background-color: whitesmoke;
+  font-family: 'Trirong', serif;
 }
 .container2 .blog-button button:hover {
   cursor: pointer;
@@ -389,6 +409,10 @@ p {
   padding-top: 30px;
   padding-bottom: 20px;
   text-align: center;
+}
+.container3 .container3-top .follow-us h3 {
+  font-family: 'allura', cursive;
+  font-size: 3.5rem;
 }
 .container3 .container3-top .follow-us p:hover {
   color: gray;
@@ -416,6 +440,7 @@ body {
 body .photogalleryTitle {
   text-align: center;
   padding: 32px;
+  font-family: 'Allura', cursive;
 }
 body .row {
   display: -ms-flexbox;
@@ -491,6 +516,7 @@ body .row .column img {
 .footer-container .copyright-container nav a {
   text-decoration: none;
   color: black;
+  font-family: 'cormorant garamond', serif;
 }
 .footer-container .copyright-container nav a:hover {
   color: gray;
