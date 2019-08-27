@@ -1,0 +1,24 @@
+@import 'mixins';
+
+.registration-container {
+	.display-justify-align(flex, flex-end, flex-end);
+	.width-height(100vw, 100%);
+	.backgroundurl-backgroundsize(url('../img/banner\ 1.jpg'), cover);
+
+	.registration-form-bg {
+		background-color: black;
+		.width-height(35vw, 100vh);
+
+		form {
+			display: flex;
+			flex-direction: column;
+
+			input {
+				width: 30rem;
+				height: 4rem;
+				margin: 1rem;
+				border: none;
+			}
+		}
+	}
+}

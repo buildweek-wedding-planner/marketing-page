@@ -501,3 +501,27 @@ body .row .column img {
   font-size: 1.4rem;
   color: #DF89A3;
 }
+.registration-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100vw;
+  height: 100%;
+  background: url('../img/banner\ 1.jpg');
+  background-size: cover;
+}
+.registration-container .registration-form-bg {
+  background-color: black;
+  width: 35vw;
+  height: 100vh;
+}
+.registration-container .registration-form-bg form {
+  display: flex;
+  flex-direction: column;
+}
+.registration-container .registration-form-bg form input {
+  width: 30rem;
+  height: 4rem;
+  margin: 1rem;
+  border: none;
+}
