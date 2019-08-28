@@ -171,13 +171,14 @@ p {
   margin: 0 auto;
 }
 .navContainer {
-  max-width: 100%;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: center;
+  justify-items: space-around;
 }
 .navContainer .navSection {
-  width: 1100px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -186,15 +187,26 @@ p {
   width: 290px;
 }
 .navContainer .navSection nav {
+  width: 600px;
   display: flex;
-  justify-items: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 999px) {
+  .navContainer .navSection nav {
+    justify-content: space-evenly;
+  }
 }
 .navContainer .navSection nav a {
   padding: 10px;
   text-decoration: none;
   color: #212529;
   font-family: 'cormorant garamond', serif;
+}
+@media (max-width: 999px) {
+  .navContainer .navSection nav a {
+    padding: 10px 0 10px 0;
+  }
 }
 .navContainer .navSection nav a:hover {
   color: gray;
@@ -300,7 +312,7 @@ p {
   color: goldenrod;
 }
 .landingPage-MainContainer {
-  width: 950px;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 20px;
 }
@@ -353,7 +365,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 1300px;
+  width: 100%;
   margin: auto;
 }
 .container2 .blogs-list .idea-section {
