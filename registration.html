@@ -11,9 +11,14 @@
 		<title>Tie the Knot</title>
 
 		<link rel="stylesheet" href="css/index.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-		<link href="https://fonts.googleapis.com/css?family=Allura|Cormorant+Garamond|Cormorant+Infant:400,600|Great+Vibes|Trirong:700&display=swap" rel="stylesheet">
-
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Allura|Cormorant+Garamond|Cormorant+Infant:400,600|Great+Vibes|Trirong:700&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 
 	<body class="container">
@@ -38,13 +43,58 @@
 		<!--Banner-->
 		<section class="registration-container">
 			<div class="registration-form-bg">
+				<div class="form-header">
+					<h2>Create An Account</h2>
+				</div>
 				<form>
-					<input type="text" name="firstname" placeholder="First name" />
-					<input type="text" name="lastname" placeholder="Last name" />
-					<input type="text" name="username" placeholder="Username" />
-					<input type="text" name="email" placeholder="Email" />
-					<input type="text" name="password" placeholder="Password" />
-					<input type="text" name="password2" placeholder="Confirm Password" />
+					<label for="firstname">First Name</label>
+					<input
+						type="text"
+						name="firstname"
+						placeholder="Enter your first name"
+					/>
+
+					<label for="lastname">Last Name</label>
+					<input
+						type="text"
+						name="lastname"
+						placeholder="Enter your last name"
+					/>
+
+					<label for="username">Username</label>
+					<input
+						type="text"
+						name="username"
+						placeholder="Choose your username"
+					/>
+
+					<label for="email">Email</label>
+					<input
+						type="text"
+						name="email"
+						placeholder="Please provide your mail"
+					/>
+
+					<label for="password">Password</label>
+					<input type="text" name="password" placeholder="Create a password" />
+
+					<label for="confirmpassword">Confirm Password</label>
+					<input
+						type="text"
+						name="confirmpassword"
+						placeholder="Enter your password again"
+					/>
+
+					<label for="accounttype" class="account-label"
+						>Choose your account type</label
+					>
+					<div class="account-type">
+						<input type="radio" name="accounttype" value="account" />
+						<h4>Planner</h4>
+						<input type="radio" name="accounttype" value="account" />
+						<h4>Bride</h4>
+					</div>
+					<input type="submit" value="Submit" class="submit-btn" />
 				</form>
 			</div>
 		</section>

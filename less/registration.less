@@ -1,24 +1,58 @@
 @import 'mixins';
+@import 'variables';
 
 .registration-container {
 	.display-justify-align(flex, flex-end, flex-end);
 	.width-height(100vw, 100%);
 	.backgroundurl-backgroundsize(url('../img/banner\ 1.jpg'), cover);
+	font-family: @cormorant;
 
 	.registration-form-bg {
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: @transparentWhite1;
+		padding: 2rem;
 		.width-height(35vw, 100vh);
 
+		.form-header {
+			text-align: center;
+		}
+
 		form {
-			display: flex;
+			.display-aligncontent(flex, space-around);
 			flex-direction: column;
-			width: 75%;
+			.width-height(100%, 100%);
+
+			label {
+				font-size: 2rem;
+				margin-left: 1rem;
+			}
 
 			input {
-				height: 6rem;
+				background: @transparentWhite1;
 				margin: 1rem;
 				border: none;
-				font-size: 2.5rem;
+				padding: 1rem;
+				font-size: 2.25rem;
+				color: @black-font;
+			}
+
+			.account-type {
+				display: inline-flex;
+				margin: 0 auto;
+
+				h4 {
+					padding-top: 1rem;
+				}
+			}
+
+			.account-label {
+				text-align: center;
+				padding: 3rem 0 1rem 0;
+			}
+
+			.submit-btn {
+				width: 65%;
+				margin: 0 auto;
+				margin-top: 1.5rem;
 			}
 		}
 	}
