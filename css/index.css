@@ -587,3 +587,65 @@ body .row .column img {
   border: none;
   border-radius: 6px;
 }
+.login-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100vw;
+  height: 100%;
+  background: url('../img/weddingdress.jpg');
+  background-size: fill;
+  background-position: center;
+  font-family: 'Cormorant Infant', serif;
+}
+.login-container .login-form-bg {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem;
+  width: 35vw;
+  height: 100vh;
+}
+.login-container .login-form-bg .form-header-login {
+  text-align: center;
+  margin-top: 6rem;
+}
+.login-container .login-form-bg form {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+}
+.login-container .login-form-bg form label {
+  font-size: 2rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.login-container .login-form-bg form input {
+  background: rgba(255, 255, 255, 0.8);
+  margin: 0.5rem 1rem 1rem 1rem;
+  border: none;
+  padding: 1rem;
+  font-size: 2.25rem;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 6px;
+}
+.login-container .login-form-bg form .account-type {
+  display: inline-flex;
+  margin: 0 auto;
+}
+.login-container .login-form-bg form .account-type h4 {
+  padding-top: 1rem;
+}
+.login-container .login-form-bg form .account-label {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+.login-container .login-form-bg form .login-btn {
+  width: 45%;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 6px;
+}

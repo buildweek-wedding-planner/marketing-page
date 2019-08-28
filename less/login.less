@@ -1,0 +1,67 @@
+@import 'mixins';
+@import 'variables';
+
+.login-container {
+	.display-justify-align(flex, flex-end, flex-end);
+	.width-height(100vw, 100%);
+	.backgroundurl-backgroundsize(url('../img/weddingdress.jpg'), fill);
+	background-position: center;
+	font-family: @cormorant;
+
+	.login-form-bg {
+		background-color: @transparentWhite1;
+		padding: 2rem;
+		.width-height(35vw, 100vh);
+
+		.form-header-login {
+			text-align: center;
+			margin-top: 6rem;
+		}
+
+		form {
+			.display-aligncontent(flex, space-around);
+			flex-direction: column;
+			.width-height(100%, 100%);
+			margin-top: 1rem;
+
+			label {
+				font-size: 2rem;
+				padding-left: 1rem;
+				margin-top: 1rem;
+			}
+
+			input {
+				background: @transparentWhite1;
+				margin: 0.5rem 1rem 1rem 1rem;
+				border: none;
+				padding: 1rem;
+				font-size: 2.25rem;
+				color: @black-font;
+				border-radius: 6px;
+			}
+
+			.account-type {
+				display: inline-flex;
+				margin: 0 auto;
+
+				h4 {
+					padding-top: 1rem;
+				}
+			}
+
+			.account-label {
+				text-align: center;
+				padding: 2rem 0 1rem 0;
+			}
+
+			.login-btn {
+				width: 45%;
+				padding: 1rem;
+				margin: 0 auto;
+				margin-top: 1.5rem;
+				border: none;
+				border-radius: 6px;
+			}
+		}
+	}
+}
