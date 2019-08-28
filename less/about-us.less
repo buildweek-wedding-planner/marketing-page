@@ -1,0 +1,44 @@
+@import 'mixins';
+@import 'variables';
+
+.about-container {
+	.width-height(100%, 100%);
+	.display-aligncontent(flex, center);
+	.backgroundurl-backgroundsize(url('../img/banner\ 1.jpg'), cover);
+	flex-direction: column;
+	color: @black-font;
+
+	.about-header {
+		font-family: @cormorant;
+		margin: 3rem 0;
+		.textcenter();
+	}
+
+	.about-body {
+		.image-wrapper {
+			.width-height(40rem, 100%);
+			.marginauto();
+			padding-bottom: 3rem;
+
+			img {
+				border-radius: 50%;
+			}
+		}
+
+		.about-copy-wrapper {
+			width: 45vw;
+			.textcenter();
+			.marginauto();
+
+			.about-copy {
+				font-size: 2rem;
+			}
+		}
+	}
+}
+
+.about-overlay {
+	background-color: @transparentWhite1;
+	.width-height(65%, 100%);
+	.marginauto();
+}
