@@ -31,10 +31,7 @@
             padding-top: 40px;
         }    
 
-        @media @tablet{
-
-        }
-        
+       
         .title{
             background-color: rgba(20, 19, 18, 0.6);
             @media @mobile{
@@ -45,6 +42,9 @@
             padding:20px;display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            @media @tablet{
+            display:none;
+            }
 
             
             button{
@@ -66,9 +66,7 @@
                     background: white; 
                 } 
 
-                @media @mobile{
-                    display: none;
-                }
+             
             }
                 
             .signUp{
@@ -82,9 +80,7 @@
                     background-color: @accentColor;
                 }
                  
-                @media @mobile{
-                    display: none;
-                }
+                
             }    
         }
         p{   
@@ -160,23 +156,16 @@
 .buttons-container{
     text-align: center;
     .weddingPlanner{
-        color: peru; 
-        border: 2px solid @accentColor;
-        font-weight: bold;
-        background-color: whitesmoke;
-        font-family: 'Trirong',serif;
-        &:hover{
-            background: white; 
-    } 
-
-    @media @mobile{
         background-color: @accentColor;
         color: white;
         border: 2px solid @accentColor;
         font-weight: bold;
         font-family: 'Trirong',serif;
-        &:hover{color: peru;}
-    }
+        &:hover{
+            color: peru;
+            transition: .5s;
+            cursor: pointer;
+        }
     }   
 }
 //blogs
@@ -277,16 +266,22 @@
         padding-bottom:30px;
         display:flex;
         flex-direction:row;
-        max-width:100%;
-        @media @mobile{
-            flex-direction: column;
+        width:100%;
+        @media @tablet{
+            flex-wrap:wrap;
+            height:100%;
+            width: 90%;
            
         }
         .demo{
             padding:0 3px 0 3px;
+          
         }
         img{
             width:16.6%;
+            @media @tablet{
+                width:50%;
+            }
             @media @mobile{
                 width: 100%;
             }

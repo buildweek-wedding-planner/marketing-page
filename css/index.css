@@ -193,12 +193,12 @@ p {
   width: 290px;
 }
 .navContainer .navSection nav {
-  width: 600px;
+  width: 700px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width:500px) {
+@media (max-width:570px) {
   .navContainer .navSection nav {
     width: 100%;
     flex-direction: column;
@@ -234,7 +234,7 @@ p {
   justify-content: space-between;
   width: 200px;
 }
-@media (max-width:500px) {
+@media (max-width:570px) {
   .navContainer .navSection .nav-buttons {
     padding: 10px;
   }
@@ -288,7 +288,7 @@ p {
   font-family: 'Cormorant Infant', serif;
   display: block;
 }
-@media (max-width:500px) {
+@media (max-width:570px) {
   .landingPage-BannerContainer .intro {
     top: 0;
     left: 0;
@@ -306,7 +306,7 @@ p {
 .landingPage-BannerContainer .intro .title {
   background-color: rgba(20, 19, 18, 0.6);
 }
-@media (max-width:500px) {
+@media (max-width:570px) {
   .landingPage-BannerContainer .intro .title {
     background-color: white;
   }
@@ -316,6 +316,11 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+@media (max-width: 940px) {
+  .landingPage-BannerContainer .intro .buttons-container {
+    display: none;
+  }
 }
 .landingPage-BannerContainer .intro .buttons-container button {
   height: 40px;
@@ -334,11 +339,6 @@ p {
 .landingPage-BannerContainer .intro .buttons-container .weddingPlanner:hover {
   background: white;
 }
-@media (max-width:500px) {
-  .landingPage-BannerContainer .intro .buttons-container .weddingPlanner {
-    display: none;
-  }
-}
 .landingPage-BannerContainer .intro .buttons-container .signUp {
   width: 140px;
   color: white;
@@ -350,16 +350,11 @@ p {
 .landingPage-BannerContainer .intro .buttons-container .signUp:hover {
   background-color: #ffb97b;
 }
-@media (max-width:500px) {
-  .landingPage-BannerContainer .intro .buttons-container .signUp {
-    display: none;
-  }
-}
 .landingPage-BannerContainer .intro p {
   font-weight: bolder;
   padding-left: 120px;
 }
-@media (max-width:500px) {
+@media (max-width:570px) {
   .landingPage-BannerContainer .intro p {
     display: none;
   }
@@ -396,7 +391,7 @@ p {
   display: flex;
   flex-direction: row;
 }
-@media (max-width:500px) {
+@media (max-width:570px) {
   .landingPage-MainContainer .advice-container {
     flex-direction: column;
   }
@@ -421,26 +416,16 @@ p {
   text-align: center;
 }
 .buttons-container .weddingPlanner {
-  color: peru;
+  background-color: #ffb97b;
+  color: white;
   border: 2px solid #ffb97b;
   font-weight: bold;
-  background-color: whitesmoke;
   font-family: 'Trirong', serif;
 }
 .buttons-container .weddingPlanner:hover {
-  background: white;
-}
-@media (max-width:500px) {
-  .buttons-container .weddingPlanner {
-    background-color: #ffb97b;
-    color: white;
-    border: 2px solid #ffb97b;
-    font-weight: bold;
-    font-family: 'Trirong', serif;
-  }
-  .buttons-container .weddingPlanner:hover {
-    color: peru;
-  }
+  color: peru;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .container2 {
   border-top: 1px solid #b6b6b6;
@@ -528,11 +513,13 @@ p {
   padding-bottom: 30px;
   display: flex;
   flex-direction: row;
-  max-width: 100%;
+  width: 100%;
 }
-@media (max-width:500px) {
+@media (max-width: 940px) {
   .container3 .photo-container {
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 90%;
   }
 }
 .container3 .photo-container .demo {
@@ -541,7 +528,12 @@ p {
 .container3 .photo-container img {
   width: 16.6%;
 }
-@media (max-width:500px) {
+@media (max-width: 940px) {
+  .container3 .photo-container img {
+    width: 50%;
+  }
+}
+@media (max-width:570px) {
   .container3 .photo-container img {
     width: 100%;
   }
@@ -619,18 +611,18 @@ body .row .column img {
   display: flex;
   justify-content: center;
 }
-@media (max-width:500px) {
+@media (max-width: 940px) {
   .footer-container .copyright-container {
     flex-direction: column;
   }
 }
 .footer-container .copyright-container nav {
-  width: 900px;
+  width: 1000px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
 }
-@media (max-width:500px) {
+@media (max-width: 940px) {
   .footer-container .copyright-container nav {
     width: 100%;
     justify-content: space-around;
@@ -638,7 +630,11 @@ body .row .column img {
     padding: 5px;
   }
 }
-@media (max-width:500px) {
+.footer-container .copyright-container nav p {
+  width: 100%;
+  text-align: center;
+}
+@media (max-width: 940px) {
   .footer-container .copyright-container nav p {
     display: none;
   }
@@ -671,6 +667,11 @@ body .row .column img {
 }
 .footer-container .copyright p {
   padding: 10px;
+}
+@media (min-width:941px) {
+  .footer-container .copyright {
+    display: none;
+  }
 }
 .registration-container {
   display: flex;

@@ -30,23 +30,24 @@
     .copyright-container{
         display: flex;
         justify-content: center;
-         @media @mobile{
+         @media @tablet{
                 flex-direction: column;
             }
         
         nav{
-            width: 900px;
+            width: 1000px;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
-            @media @mobile{
+            justify-content: center;
+            @media @tablet{
                 width: 100%;
                 justify-content: space-around;
                 align-items: center;
                 padding: 5px; 
             }
-            p{
-                @media @mobile{
+            p{ width: 100%;
+                text-align:center;
+                @media @tablet{
                     display: none;
                 }
             }
@@ -77,8 +78,11 @@
         padding: 0px;
         .fa-heart{
             color: #DF89A3;
-
         }
         p{padding: 10px;}
+        @media @desktop{
+            display: none;
+        }
+       
     }
 }
