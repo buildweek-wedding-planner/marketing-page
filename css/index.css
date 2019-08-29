@@ -206,6 +206,7 @@ p {
 @media (max-width:500px) {
   .navContainer .navSection nav {
     width: 100%;
+    flex-direction: column;
   }
 }
 @media (max-width: 999px) {
@@ -235,6 +236,11 @@ p {
   align-items: center;
   justify-content: space-between;
   width: 200px;
+}
+@media (max-width:500px) {
+  .navContainer .navSection .nav-buttons {
+    padding: 10px;
+  }
 }
 .navContainer .navSection .nav-buttons button {
   height: 25px;
@@ -279,8 +285,28 @@ p {
   color: white;
   font-family: 'Cormorant Infant', serif;
 }
+@media (max-width:500px) {
+  .landingPage-BannerContainer .intro {
+    top: 0;
+    left: 0;
+    position: initial;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: initial;
+    padding-top: 40px;
+  }
+}
 .landingPage-BannerContainer .intro .title {
-  background-color: rgba(40, 33, 26, 0.6);
+  background-color: rgba(20, 19, 18, 0.6);
+}
+@media (max-width:500px) {
+  .landingPage-BannerContainer .intro .title {
+    background-color: white;
+  }
 }
 .landingPage-BannerContainer .intro .buttons-container {
   padding: 20px;
@@ -305,6 +331,11 @@ p {
 .landingPage-BannerContainer .intro .buttons-container .weddingPlanner:hover {
   background: white;
 }
+@media (max-width:500px) {
+  .landingPage-BannerContainer .intro .buttons-container .weddingPlanner {
+    display: none;
+  }
+}
 .landingPage-BannerContainer .intro .buttons-container .signUp {
   width: 140px;
   color: white;
@@ -316,9 +347,19 @@ p {
 .landingPage-BannerContainer .intro .buttons-container .signUp:hover {
   background-color: #ffb97b;
 }
+@media (max-width:500px) {
+  .landingPage-BannerContainer .intro .buttons-container .signUp {
+    display: none;
+  }
+}
 .landingPage-BannerContainer .intro p {
   font-weight: bolder;
   padding-left: 120px;
+}
+@media (max-width:500px) {
+  .landingPage-BannerContainer .intro p {
+    display: none;
+  }
 }
 .landingPage-BannerContainer .intro p a {
   text-decoration: none;
@@ -352,6 +393,11 @@ p {
   display: flex;
   flex-direction: row;
 }
+@media (max-width:500px) {
+  .landingPage-MainContainer .advice-container {
+    flex-direction: column;
+  }
+}
 .landingPage-MainContainer .advice-container .advice-section {
   padding: 10px;
 }
@@ -367,6 +413,31 @@ p {
 .landingPage-MainContainer .advice-container .advice-section .top p {
   line-height: 60px;
   font-weight: 700;
+}
+.buttons-container {
+  text-align: center;
+}
+.buttons-container .weddingPlanner {
+  color: peru;
+  border: 2px solid #ffb97b;
+  font-weight: bold;
+  background-color: whitesmoke;
+  font-family: 'Trirong', serif;
+}
+.buttons-container .weddingPlanner:hover {
+  background: white;
+}
+@media (max-width:500px) {
+  .buttons-container .weddingPlanner {
+    background-color: #ffb97b;
+    color: white;
+    border: 2px solid #ffb97b;
+    font-weight: bold;
+    font-family: 'Trirong', serif;
+  }
+  .buttons-container .weddingPlanner:hover {
+    color: peru;
+  }
 }
 .container2 {
   border-top: 1px solid #b6b6b6;
@@ -456,11 +527,21 @@ p {
   flex-direction: row;
   max-width: 100%;
 }
+@media (max-width:500px) {
+  .container3 .photo-container {
+    flex-direction: column;
+  }
+}
 .container3 .photo-container .demo {
   padding: 0 3px 0 3px;
 }
 .container3 .photo-container img {
   width: 16.6%;
+}
+@media (max-width:500px) {
+  .container3 .photo-container img {
+    width: 100%;
+  }
 }
 body {
   margin: 0;
@@ -535,16 +616,37 @@ body .row .column img {
   display: flex;
   justify-content: center;
 }
+@media (max-width:500px) {
+  .footer-container .copyright-container {
+    flex-direction: column;
+  }
+}
 .footer-container .copyright-container nav {
   width: 900px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
+@media (max-width:500px) {
+  .footer-container .copyright-container nav {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+  }
+}
+@media (max-width:500px) {
+  .footer-container .copyright-container nav p {
+    display: none;
+  }
+}
 .footer-container .copyright-container nav a {
   text-decoration: none;
   color: black;
   font-family: 'cormorant garamond', serif;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 .footer-container .copyright-container nav a:hover {
   color: gray;
@@ -554,6 +656,18 @@ body .row .column img {
 .footer-container .copyright-container nav .fa-heart {
   font-size: 1.4rem;
   color: #DF89A3;
+}
+.footer-container .copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0px;
+}
+.footer-container .copyright .fa-heart {
+  color: #DF89A3;
+}
+.footer-container .copyright p {
+  padding: 10px;
 }
 .registration-container {
   display: flex;

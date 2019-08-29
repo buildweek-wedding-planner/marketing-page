@@ -15,14 +15,32 @@
         left: 10%;
         color: white;
         font-family: 'Cormorant Infant', serif;
+
+        @media @mobile{
+            top: 0;
+            left: 0;
+            position: initial;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: initial;
+            padding-top: 40px;
+        }    
         
         .title{
-            background-color: rgba(40,33,26,0.6);
+            background-color: rgba(20, 19, 18, 0.6);
+            @media @mobile{
+            background-color: white;
+            }
         }
         .buttons-container{
             padding:20px;display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+
             
             button{
                     height: 40px; 
@@ -34,14 +52,18 @@
             }
                 
             .weddingPlanner{
-                    color: peru; 
-                    border: 2px solid @accentColor;
-                    font-weight: bold;
-                    background-color: whitesmoke;
-                    font-family: 'Trirong',serif;
-                    &:hover{
-                        background: white; 
-                    } 
+                color: peru; 
+                border: 2px solid @accentColor;
+                font-weight: bold;
+                background-color: whitesmoke;
+                font-family: 'Trirong',serif;
+                &:hover{
+                    background: white; 
+                } 
+
+                @media @mobile{
+                    display: none;
+                }
             }
                 
             .signUp{
@@ -54,11 +76,19 @@
                 &:hover{
                     background-color: @accentColor;
                 }
+                 
+                @media @mobile{
+                    display: none;
+                }
             }    
         }
         p{   
             font-weight:bolder;
             padding-left: 120px;
+            
+            @media @mobile{
+                display: none;
+            }
             
             a{
                 text-decoration: none;
@@ -84,6 +114,9 @@
        align-items: center;
        height: 190px;
        max-width: 100%;
+       @media @mobile{
+           
+       }
        h3{
            font-family: 'allura', cursive;
             font-size: 3.5rem;
@@ -97,6 +130,9 @@
     .advice-container{
         display:flex;
         flex-direction: row;
+        @media @mobile{
+            flex-direction: column
+        }
         
         .advice-section{
             padding: 10px;
@@ -113,12 +149,31 @@
                     font-weight: 700;
                 }
             }
-             
         }
     }     
-        
 }
+.buttons-container{
+    text-align: center;
+    .weddingPlanner{
+        color: peru; 
+        border: 2px solid @accentColor;
+        font-weight: bold;
+        background-color: whitesmoke;
+        font-family: 'Trirong',serif;
+        &:hover{
+            background: white; 
+    } 
 
+    @media @mobile{
+        background-color: @accentColor;
+        color: white;
+        border: 2px solid @accentColor;
+        font-weight: bold;
+        font-family: 'Trirong',serif;
+        &:hover{color: peru;}
+    }
+    }   
+}
 //blogs
 .container2{
     border-top: 1px solid @linecolor;
@@ -180,6 +235,7 @@
     }
 }
 
+
 //Follow Us:IG
 .container3{
     width: 100%;
@@ -217,11 +273,18 @@
         display:flex;
         flex-direction:row;
         max-width:100%;
+        @media @mobile{
+            flex-direction: column;
+           
+        }
         .demo{
             padding:0 3px 0 3px;
         }
         img{
             width:16.6%;
+            @media @mobile{
+                width: 100%;
+            }
         }
 
     }
