@@ -1,26 +1,28 @@
 @import 'mixins';
 @import 'variables';
 
-.registration-container {
+.login-container {
 	.display-justify-align(flex, flex-end, flex-end);
 	.width-height(100vw, 100%);
-	.backgroundurl-backgroundsize(url('../img/whitedresswoman.jpg'), cover);
-	background-position: bottom;
+	.backgroundurl-backgroundsize(url('../img/weddingdress.jpg'), fill);
+	background-position: center;
 	font-family: @cormorant;
 
-	.registration-form-bg {
+	.login-form-bg {
 		background-color: @transparentWhite1;
 		padding: 2rem;
-		.width-height(35vw, 100vh);
+		.width-height(35vw, 100%);
 
-		.form-header {
+		.form-header-login {
 			text-align: center;
+			margin-top: 6rem;
 		}
 
 		form {
 			.display-aligncontent(flex, space-around);
 			flex-direction: column;
 			.width-height(100%, 100%);
+			margin-top: 1rem;
 
 			label {
 				font-size: 2rem;
@@ -52,7 +54,7 @@
 				padding: 2rem 0 1rem 0;
 			}
 
-			.submit-btn {
+			.login-btn {
 				width: 45%;
 				padding: 1rem;
 				margin: 0 auto;
