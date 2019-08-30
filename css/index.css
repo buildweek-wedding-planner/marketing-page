@@ -296,8 +296,7 @@ p {
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 100%;
     height: initial;
     padding-top: 40px;
@@ -379,6 +378,12 @@ p {
   height: 190px;
   max-width: 100%;
 }
+@media (max-width:570px) {
+  .landingPage-MainContainer .title {
+    width: 100%;
+    text-align: center;
+  }
+}
 .landingPage-MainContainer .title h3 {
   font-family: 'allura', cursive;
   font-size: 3.5rem;
@@ -426,6 +431,11 @@ p {
   color: peru;
   transition: 0.5s;
   cursor: pointer;
+}
+@media (min-width:941px) {
+  .buttons-container {
+    display: none;
+  }
 }
 .container2 {
   border-top: 1px solid #b6b6b6;

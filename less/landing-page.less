@@ -24,8 +24,8 @@
             color: black;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
+            
             width: 100%;
             height: initial;
             padding-top: 40px;
@@ -116,7 +116,8 @@
        height: 190px;
        max-width: 100%;
        @media @mobile{
-           
+           width:100%;
+           text-align:center;
        }
        h3{
            font-family: 'allura', cursive;
@@ -166,7 +167,10 @@
             transition: .5s;
             cursor: pointer;
         }
-    }   
+    } 
+    @media @desktop{
+        display: none;
+    }  
 }
 //blogs
 .container2{
