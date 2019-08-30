@@ -12,17 +12,40 @@
         height:250px;
         position: absolute;
         top: 40%;
-        left: 10%;
+        left: 30px;
         color: white;
         font-family: 'Cormorant Infant', serif;
-        
+        display: block;
+
+        @media @mobile{
+            top: 0;
+            left: 0;
+            position: initial;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            
+            width: 100%;
+            height: initial;
+            padding-top: 40px;
+        }    
+
+       
         .title{
-            background-color: rgba(40,33,26,0.6);
+            background-color: rgba(20, 19, 18, 0.6);
+            @media @mobile{
+            background-color: white;
+            }
         }
         .buttons-container{
             padding:20px;display: flex;
             flex-direction: row;
             justify-content: space-evenly;
+            @media @tablet{
+            display:none;
+            }
+
             
             button{
                     height: 40px; 
@@ -34,14 +57,16 @@
             }
                 
             .weddingPlanner{
-                    color: peru; 
-                    border: 2px solid @accentColor;
-                    font-weight: bold;
-                    background-color: whitesmoke;
-                    font-family: 'Trirong',serif;
-                    &:hover{
-                        background: white; 
-                    } 
+                color: peru; 
+                border: 2px solid @accentColor;
+                font-weight: bold;
+                background-color: whitesmoke;
+                font-family: 'Trirong',serif;
+                &:hover{
+                    background: white; 
+                } 
+
+             
             }
                 
             .signUp{
@@ -54,11 +79,17 @@
                 &:hover{
                     background-color: @accentColor;
                 }
+                 
+                
             }    
         }
         p{   
             font-weight:bolder;
             padding-left: 120px;
+            
+            @media @mobile{
+                display: none;
+            }
             
             a{
                 text-decoration: none;
@@ -73,7 +104,7 @@
 }
 
 .landingPage-MainContainer{ 
-   width:950px;
+   width:100%;
    margin: 0 auto;
    padding-bottom: 20px;
 
@@ -84,6 +115,10 @@
        align-items: center;
        height: 190px;
        max-width: 100%;
+       @media @mobile{
+           width:100%;
+           text-align:center;
+       }
        h3{
            font-family: 'allura', cursive;
             font-size: 3.5rem;
@@ -97,6 +132,10 @@
     .advice-container{
         display:flex;
         flex-direction: row;
+        @media @mobile{
+            flex-direction: column
+        }
+        
         .advice-section{
             padding: 10px;
             .top{
@@ -112,12 +151,27 @@
                     font-weight: 700;
                 }
             }
-             
         }
     }     
-        
 }
-
+.buttons-container{
+    text-align: center;
+    .weddingPlanner{
+        background-color: @accentColor;
+        color: white;
+        border: 2px solid @accentColor;
+        font-weight: bold;
+        font-family: 'Trirong',serif;
+        &:hover{
+            color: peru;
+            transition: .5s;
+            cursor: pointer;
+        }
+    } 
+    @media @desktop{
+        display: none;
+    }  
+}
 //blogs
 .container2{
     border-top: 1px solid @linecolor;
@@ -132,7 +186,7 @@
         display:flex;
         flex-wrap:wrap;
         justify-content: center;
-        width:1300px;
+        width:100%;
         margin:auto;
       
         .idea-section{
@@ -179,6 +233,7 @@
     }
 }
 
+
 //Follow Us:IG
 .container3{
     width: 100%;
@@ -215,12 +270,25 @@
         padding-bottom:30px;
         display:flex;
         flex-direction:row;
-        max-width:100%;
+        width:100%;
+        @media @tablet{
+            flex-wrap:wrap;
+            height:100%;
+            width: 90%;
+           
+        }
         .demo{
             padding:0 3px 0 3px;
+          
         }
         img{
             width:16.6%;
+            @media @tablet{
+                width:50%;
+            }
+            @media @mobile{
+                width: 100%;
+            }
         }
 
     }
