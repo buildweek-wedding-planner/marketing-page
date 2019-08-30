@@ -30,16 +30,35 @@
     .copyright-container{
         display: flex;
         justify-content: center;
+         @media @tablet{
+                flex-direction: column;
+            }
         
         nav{
-            width: 900px;
+            width: 1000px;
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
+            @media @tablet{
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                padding: 5px; 
+            }
+            p{ width: 100%;
+                text-align:center;
+                @media @tablet{
+                    display: none;
+                }
+            }
+            
             a{
                 text-decoration: none;
                 color: black;
                 font-family: 'cormorant garamond', serif;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
                 &:hover{
                     color: gray;
                     text-decoration: underline;
@@ -50,7 +69,20 @@
                 font-size:1.4rem;
                 color: #DF89A3;
             }
-           
         }
+    }
+    .copyright{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px;
+        .fa-heart{
+            color: #DF89A3;
+        }
+        p{padding: 10px;}
+        @media @desktop{
+            display: none;
+        }
+       
     }
 }
