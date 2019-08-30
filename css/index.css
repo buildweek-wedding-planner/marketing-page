@@ -239,11 +239,6 @@ p {
     padding: 10px;
   }
 }
-@media (max-width: 940px) {
-  .navContainer .navSection .nav-buttons {
-    display: none;
-  }
-}
 .navContainer .navSection .nav-buttons button {
   height: 25px;
   border-radius: 10%;
