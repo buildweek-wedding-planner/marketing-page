@@ -340,6 +340,7 @@ p {
   border: 2px solid #ffb97b;
   font-weight: bold;
   font-family: 'Trirong', serif;
+  transition-duration: 1s;
 }
 .landingPage-BannerContainer .intro .buttons-container .signUp:hover {
   background-color: #ffb97b;
@@ -353,12 +354,15 @@ p {
     display: none;
   }
 }
-.landingPage-BannerContainer .intro p a {
+.landingPage-BannerContainer .intro p .logIn {
   text-decoration: none;
-  color: white;
+  font-family: 'Trirong', serif;
+  border-radius: 4px;
+  border: none;
 }
-.landingPage-BannerContainer .intro p a:hover {
+.landingPage-BannerContainer .intro p .logIn:hover {
   color: goldenrod;
+  cursor: pointer;
 }
 .landingPage-MainContainer {
   width: 100%;
