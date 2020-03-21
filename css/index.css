@@ -216,6 +216,7 @@ p {
   text-decoration: none;
   color: #212529;
   font-family: 'cormorant garamond', serif;
+  transition-duration: 0.3s;
 }
 @media (max-width: 940px) {
   .navContainer .navSection nav a {
@@ -225,7 +226,6 @@ p {
 .navContainer .navSection nav a:hover {
   color: gray;
   border-bottom: 2px solid black;
-  transition: 0.2s;
 }
 .navContainer .navSection .nav-buttons {
   display: flex;
@@ -246,19 +246,21 @@ p {
   border-style: none;
 }
 .navContainer .navSection .nav-buttons .signUp {
-  background-color: #ffb97b;
-  color: white;
+  background-color: white;
+  color: #ffb97b;
   font-family: 'Trirong', serif;
+  transition-duration: 0.3s;
 }
 .navContainer .navSection .nav-buttons .signUp:hover {
-  background-color: white;
+  background-color: #ffb97b;
   cursor: pointer;
-  color: #ffb97b;
+  color: white;
 }
 .navContainer .navSection .nav-buttons .logIn {
   background-color: white;
   color: #ffb97b;
   font-family: 'Trirong', serif;
+  transition-duration: 0.3s;
 }
 .navContainer .navSection .nav-buttons .logIn:hover {
   background-color: #ffb97b;
