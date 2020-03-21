@@ -340,7 +340,7 @@ p {
   border: 2px solid #ffb97b;
   font-weight: bold;
   font-family: 'Trirong', serif;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 .landingPage-BannerContainer .intro .buttons-container .signUp:hover {
   background-color: #ffb97b;
@@ -359,6 +359,7 @@ p {
   font-family: 'Trirong', serif;
   border-radius: 4px;
   border: none;
+  transition-duration: 0.5s;
 }
 .landingPage-BannerContainer .intro p .logIn:hover {
   color: goldenrod;
