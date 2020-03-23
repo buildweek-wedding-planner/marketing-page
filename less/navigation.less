@@ -45,6 +45,7 @@
                 text-decoration: none;
                 color: #212529;
                 font-family: 'cormorant garamond', serif;
+                transition-duration: .3s;
               @media @tablet{
                   padding:10px 0 10px 0;
                   
@@ -52,7 +53,6 @@
                 &:hover{
                     color: gray;
                     border-bottom: 2px solid black;
-                    transition: 0.2s;
                 }
             }        
         }
@@ -75,20 +75,25 @@
            
             }
             .signUp{
-                background-color: @accentColor;
-                color: white;
+                background-color: white;
+                color: @accentColor;
                 font-family: 'Trirong',serif;
+                transition-duration: .3s;
+
                 &:hover{
-                    background-color: white; 
+                    background-color: @accentColor;
                     cursor: pointer;
-                    color: @accentColor;
-                   
+                    color: white;
                 }
+                   
+                
             }
             .logIn{
                 background-color: white;
                 color: @accentColor;
                 font-family: 'Trirong',serif;
+                transition-duration: .3s;
+
                 &:hover{
                     background-color: @accentColor;
                     cursor: pointer;

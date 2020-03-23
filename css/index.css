@@ -216,6 +216,7 @@ p {
   text-decoration: none;
   color: #212529;
   font-family: 'cormorant garamond', serif;
+  transition-duration: 0.3s;
 }
 @media (max-width: 940px) {
   .navContainer .navSection nav a {
@@ -225,7 +226,6 @@ p {
 .navContainer .navSection nav a:hover {
   color: gray;
   border-bottom: 2px solid black;
-  transition: 0.2s;
 }
 .navContainer .navSection .nav-buttons {
   display: flex;
@@ -246,19 +246,21 @@ p {
   border-style: none;
 }
 .navContainer .navSection .nav-buttons .signUp {
-  background-color: #ffb97b;
-  color: white;
+  background-color: white;
+  color: #ffb97b;
   font-family: 'Trirong', serif;
+  transition-duration: 0.3s;
 }
 .navContainer .navSection .nav-buttons .signUp:hover {
-  background-color: white;
+  background-color: #ffb97b;
   cursor: pointer;
-  color: #ffb97b;
+  color: white;
 }
 .navContainer .navSection .nav-buttons .logIn {
   background-color: white;
   color: #ffb97b;
   font-family: 'Trirong', serif;
+  transition-duration: 0.3s;
 }
 .navContainer .navSection .nav-buttons .logIn:hover {
   background-color: #ffb97b;
@@ -340,6 +342,7 @@ p {
   border: 2px solid #ffb97b;
   font-weight: bold;
   font-family: 'Trirong', serif;
+  transition-duration: 0.5s;
 }
 .landingPage-BannerContainer .intro .buttons-container .signUp:hover {
   background-color: #ffb97b;
@@ -353,12 +356,16 @@ p {
     display: none;
   }
 }
-.landingPage-BannerContainer .intro p a {
+.landingPage-BannerContainer .intro p .logIn {
   text-decoration: none;
-  color: white;
+  font-family: 'Trirong', serif;
+  border-radius: 4px;
+  border: none;
+  transition-duration: 0.5s;
 }
-.landingPage-BannerContainer .intro p a:hover {
+.landingPage-BannerContainer .intro p .logIn:hover {
   color: goldenrod;
+  cursor: pointer;
 }
 .landingPage-MainContainer {
   width: 100%;
@@ -479,12 +486,12 @@ p {
   border: 2px solid peru;
   background-color: whitesmoke;
   font-family: 'Trirong', serif;
+  transition: 0.5s;
 }
 .container2 .blog-button button:hover {
   cursor: pointer;
   background-color: peru;
   border: 2px solid #e6e0e0;
-  transition: 0.5s;
 }
 .container3 {
   width: 100%;
@@ -506,10 +513,12 @@ p {
   font-family: 'allura', cursive;
   font-size: 3.5rem;
 }
+.container3 .container3-top .follow-us p {
+  transition: 0.3s;
+}
 .container3 .container3-top .follow-us p:hover {
   color: gray;
   cursor: pointer;
-  transition: 0.3s;
 }
 .container3 .photo-container {
   border-top: 1px solid #b6b6b6;
@@ -608,6 +617,7 @@ body .row .column img {
   border-radius: 50%;
   color: #e6e0e0;
   background-color: #6E5F5F;
+  transition: 0.3s;
 }
 .footer-container .move-footer .footer-icons a:hover {
   color: #958989;
