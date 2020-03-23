@@ -617,6 +617,7 @@ body .row .column img {
   border-radius: 50%;
   color: #e6e0e0;
   background-color: #6E5F5F;
+  transition: 0.3s;
 }
 .footer-container .move-footer .footer-icons a:hover {
   color: #958989;
